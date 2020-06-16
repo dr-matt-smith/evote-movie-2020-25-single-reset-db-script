@@ -1,6 +1,12 @@
 image:
   file: .gitpod.dockerfile
 
+ports:
+  - port: 8000
+    onOpen: ignore
+  - port: 3306
+    onOpen: ignore
+    
 tasks:
   - init: composer install
     command: echo "Hallo"
