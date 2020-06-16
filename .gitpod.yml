@@ -1,2 +1,4 @@
 image:
   file: .gitpod.dockerfile
+
+SET @gitpodDbPassword = IFNULL(@gitpodDbPassword, 'Pass$$');
