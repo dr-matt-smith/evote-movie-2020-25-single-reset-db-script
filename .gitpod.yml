@@ -12,7 +12,10 @@ tasks:
   - name: MySQL
     command: >
         mysqld
-  - command: mysql -e "alter user 'root'@'localhost' identified with mysql_native_password by 'Pass$$'"
+  - command: mysql -e "CREATE USER matt PASSWORD 'passpass'"
+  - command: mysql -e "CREATE DATABASE evote"
+  - command: mysql -e "GRANT ALL PRIVILEGES ON DATABASE evote to matt'"
+  - command: mysql -e "ALTER USER 'matt'@'localhost' IDENTIFIED WITH mysql_native_password by 'passpass'"
   - command: php src/db/resetDatabase.php
   - command: composer serve
-
+  
