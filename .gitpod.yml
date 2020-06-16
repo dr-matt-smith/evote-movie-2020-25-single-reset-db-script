@@ -9,9 +9,9 @@ ports:
     
 tasks:
   - init: composer install
-    command: mysql create database evote
-    command: mysql create user evote password evote
-    command: mysql GRANT ALL PRIVILEGES ON evote TO 'evote'@'localhost';
+    #command: mysql create database evote
+    #command: mysql create user evote password evote
+    #command: mysql GRANT ALL PRIVILEGES ON evote TO 'evote'@'localhost';
   - name: MySQL
     command: >
         mysqld
