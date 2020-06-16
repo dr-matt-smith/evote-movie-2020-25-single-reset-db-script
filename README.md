@@ -1,5 +1,8 @@
 # evote-movie-2020-25-single-reset-db-script
 
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/dr-matt-smith/evote-movie-2020-25-single-reset-db-script)
+
+
 Let's tidy things up, to have a single master script to run all our database setup and fixtures.
 
 ![single master reset DB script](screenshots/resetdb.png)
