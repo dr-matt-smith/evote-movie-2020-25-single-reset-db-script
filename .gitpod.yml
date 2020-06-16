@@ -1,4 +1,9 @@
 image:
   file: .gitpod.dockerfile
 
-SET @gitpodDbPassword = IFNULL(@gitpodDbPassword, 'Pass$$');
+tasks:
+  - init: composer install
+    command: echo "Hallo"
+  - name: MySQL
+    command: >
+        mysqld
