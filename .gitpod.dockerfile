@@ -1,3 +1,3 @@
 FROM gitpod/workspace-mysql
 
-RUN mysqld && mysql -u root -p < .mysql.sql
+RUN mysqld && mysql -u root -p ""
