@@ -12,9 +12,6 @@ tasks:
   - name: MySQL
     command: >
         mysqld
-  - command: mysql -e "CREATE USER 'matt'@'localhost' IDENTIFIED WITH mysql_native_password by 'passpass'"
-  - command: mysql -e "CREATE DATABASE evote"
-  - command: mysql -e "GRANT ALL ON evote TO 'matt'@'localhost'"
   - command: php db/resetDatabase.php
   - command: composer serve
   
